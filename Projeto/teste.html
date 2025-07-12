@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./est.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- tail wind -->
+    <header>
+        <div class="themaoin">
+            <div class="eu">
+                <image class="dog" src="img/dog.jpg"></image>
+                <div>
+                    <span class="info">
+                        <b>Matheus Ricardo Belli</b>
+                        <br>Um estudante da tecnologia
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><button class="um">Sobre mim</button></li>
+                    <li><button class="dois">Skills</button></li>
+                    <li><button class="tres">Projetos</button></li>
+
+                </ul>
+
+
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="corpo">
+        <div class="coisas">
+            <section class="mim">
+                <h1>Sobre mim</h1>
+                <div class="sobre">
+                    <p>
+                        Me chamo Matheus, tenho 22 anos, sou do interior de São Paulo.
+                        <br><br>
+                        Comecei a estudar programação faz uns 3 anos, mas realizei outros cursos envolvendo tecnologia.
+                        Agora estou voltando ao aprendizado.
+                        <br><br>
+                        Estou nessa área por simplesmente por gostar e ser algo que eu gostaria de viver trabalhando.
+                        Espero aprender muito mais e logo seguir carreira na área.
+
+                    </p>
+
+                </div>
+            </section>
+
+            <section class="util">
+                <h1>Habilidades</h1>
+                <ul class="hab">
+                    <li><i class="fab fa-html5"></i><br>HTML</li>
+                    <li><i class="fab fa-css3-alt"></i><br>CSS</li>
+                    <li><i class="fab fa-js-square"></i><br>JavaScript</li>
+                    <li><i class="fab fa-node-js"></i><br>Node.js</li>
+
+                </ul>
+
+            </section>
+
+            <section class="feito">
+                <h1>Projetos</h1>
+                <div class="proj">
+                    <article class="card">
+                        <h2>Calculadora JS</h2>
+                        <p>Calculadora funcional com operações básicas.</p>
+
+                    </article>
+
+                    <article class="card">
+                        <h2>To-do List</h2>
+                        <p>Lista de tarefas com salvamento local.</p>
+                        
+                    </article>
+
+                    <article class="card">
+                        <h2>Conversor de Moeda</h2>
+                        <p>App que converte moedas em tempo real com API.</p>
+                    
+                    </article>
+
+                    <aside class="card">
+                        <h2>Outros acessos </h2>
+                        <ul class="links">
+                            <li><a href="https://github.com/bellimatheus" target="_blank"> <i class="fab fa-github"></i> </a></li>
+                            <li><p>GitHub</p></li>
+                        </ul>
+                    </aside>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+    <footer>
+        Informações contato: bellimths@gmail.com <br>
+        Direitos autorais: © 2025 Matheus Ricardo Belli
+    </footer>
+</body>
+
+</html>
+
+
+<!-- 
+let email = "teste@gmail.com"
+let regex = /^[^\s@]+@[^\s@]+\.[^s@]+$/
+console.log(regex.test(email)); //true
+
+------------------
+//captura e tratamento de erros
+
+<input type="text" id="usuario" placeholder="Nome usuário">
+<span id="se"></span>
+
+<script>
+    document.getElementById("usuario").addEventListener("input", function () {
+        let nome = this.value;
+        if (nome.length < 3){
+            document.getElementById("se").innerText = "Nome deve ter ao menos 3 caracteres";
+        }else{
+            document.getElementById("se").innerText = "";
+        }
+    });
+</script>
+
+-------------------
+//Evento blur para validar
+
+
+<input type="password" id="senha" placeholder="Digite sua senha">
+<span id="errar"></span>
+
+<script>
+    document.getElementById("senha").addEventListener("blur", function () {
+        if (this.value.length < 6){
+            //this.style.border = "2px solid red"
+            document.getElementById("errar").innerText = "Senha deve ter ao menos 6 caracteres";
+        }else{
+            //this.style.border = "2px solid green"
+            document.getElementById("errar").innerText = "";
+        }
+    });
+</script>
+
+------------------------------
+//Manipular estilos para erros
+
+
+<input type="text" id="name" placeholder="Nome">
+<span id="msgErrar"></span>
+
+<script>
+    document.getElementById("name").addEventListener("blur", function () {
+        if (this.value.trim() === ""){
+            this.style.border = "2px solid red"
+            document.getElementById("msgErrar").innerText = "Nome obrigatório";
+        }else{
+            this.style.border = "2px solid green"
+            document.getElementById("msgErrar").innerText = "";
+        }
+    });
+</script>
+
+---------------------------------
+//Evitando envios inválidos de formulários
+
+<form id="cad">
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="email" id="email" placeholder="E-mail">
+    <button type="submit">Cadastrar</button>
+</form>
+
+<script>
+    document.getElementById("cad").addEventListener("submit", function(event)){
+        let nome = document.getElementById("nome").value;
+        let email = document.getElementById("email").value;
+        if (nome.length < 3 || !email.includes("@")){
+            alert("Preencha corretamente")
+            event.preventDefault();
+        }    
+    });
+
+</script>
+
+----------------------------------
+//Validaçãp com expressões regulares
+
+let senha = "Senha@123"
+let regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6,}$/;
+
+console.log(regex.test(senha))
+
+
+1) (?=.*[A-Z]): 
+Pelo menos uma letra maiúscula
+
+2) (?=.*\d)
+Pelo menos um número
+
+3) (?=.*[@$!%*?&])
+Pelo menos um caractere especial
+
+4) {6,}
+No minimo 6 caracteres
+-->

@@ -1,0 +1,364 @@
+/* Geral */
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.dog{
+    margin-right: 70px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+
+.themaoin{
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 3px;
+    padding-top: 0.5%;
+    padding-left: 10%;
+    padding-right: 8%;
+    background-color: rgb(61, 131, 211);
+    color: white;
+    
+}
+
+.eu{
+    
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    text-align:start;
+}
+
+.info b{
+    font-size: 20px;
+}
+
+
+.nav{
+    text-align: center;
+    
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;    
+    gap: 80px;
+    
+
+}
+
+button{
+    transition: 0.2s;
+    color: white;
+    background-color: rgb(61, 131, 211);
+    width: 100%;
+    height: 50%;
+    font-size: 20px;
+    border-style:hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: bold;
+    /* background-color: #1e1e1e; */
+    transform: scale(1.05);
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+}
+
+
+
+/* Body */
+
+
+.corpo{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://www.marktechpost.com/wp-content/uploads/2023/08/business-data-financial-figures-visualiser-graphic-scaled.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+
+.coisas section {
+    text-align: center;
+    margin: 150px;
+    padding: 50px;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+
+.mim{
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    
+    
+
+}
+
+.mim h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00d1ff;
+    display: inline-block;
+}
+
+.sobre{
+    
+    font-size: 18px;
+    line-height: 2.2;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    padding: 20px 40px;
+    color: #ffffff;
+    background-color: #2c2c2c;
+}
+
+.sobre p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+.util{
+    background: #121212;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+}
+
+.util h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00d1ff;
+    color: #ffffff;
+    display: inline-block;
+}
+
+
+.hab{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+.hab li p{
+    color: #ffffff;
+}
+
+.hab li i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+.hab li{
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.5s ease;
+    background-color: #2c2c2c;
+    color: #00d1ff;
+    font-weight: bold;
+    padding: 17px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    
+}
+
+.hab li:hover{
+    transform: translateY(-25px);    
+}
+
+.feito{
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+.feito h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00d1ff;
+    color: #ffffff;
+    display: inline-block;
+}
+
+
+.proj {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.5s ease;
+    background-color: #2c2c2c;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-22px);
+}
+
+.card h2{
+    color: #00d1ff;
+    margin-bottom: 25px;
+}
+
+article {
+  flex: 1;
+}
+
+aside{
+    flex: 1;
+    
+}
+
+aside ul li{
+    list-style: none;
+}
+
+.links{
+    margin: 0px;
+    padding: 0;
+    
+}
+
+.links li a i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(61, 131, 211);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+@media (max-width: 1100px){
+    .nav ul{
+        list-style: none;
+        display: flex;    
+        gap: 20px;
+        
+
+    }
+
+}
+
+@media (max-width: 906px) {
+    
+    .themaoin {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .dog{
+        margin: 0;
+    }
+
+    .eu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .eu span {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .nav li {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+        font-size: 20px;
+    }
+
+
+    .corpo {
+        padding: 20px;
+    }
+
+    .coisas section {
+        margin: 40px 0;
+        padding: 20px;
+    }
+
+    .proj {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .hab {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hab li {
+        width: 90%;
+    }
+}
